@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+      .background {
+        width: 100%;
+        height: 94vh;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(90deg, #5257df, #1aa8eb);
+        clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        font-size: 15px;
+        font-weight: bold;
+        background-color: transparent;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        z-index: 999;
+      }
+
+      .navbar-left {
+        margin-left: 15%;
+      }
+
+      .navbar-right {
+        margin-right: 15%;
+      }
+
+      .navbar-link {
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px 5px;
+      }
+      .navbar-link:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+      }
+
+      .navbar-button {
+        margin-left: 10px;
+        padding: 7px 15px;
+        background-color: transparent;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        border: 1px solid white;
+        font-size: 15px;
+      }
+      .navbar-button:hover {
+        font-size: 17px;
+      }
+      .field_container {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        margin: 0 auto;
+        width: 350px;
+        height: 370px;
+        margin-top: 100px;
+        text-align: center;
+        border-radius: 2px;
+        margin-right: 200px;
+      }
+
+      h3 {
+        padding-top: 20px;
+      }
+      .field_container select,
+      .field_container input[type="text"],
+      .field_container input[type="password"],
+      .field_container input[type="email"] {
+        width: 300px;
+        height: 30px;
+        margin: auto;
+        padding: 0px;
+        padding-top: 7px;
+        padding-bottom: 5px;
+        margin-top: 8px;
+        outline: none;
+        border: none;
+        background-color: rgba(234, 233, 233, 0.847);
+
+        text-indent: 10px;
+      }
+      .field_container select {
+        height: 40px;
+      }
+
+      .field_container input[type="submit"] {
+        background-color: rgb(0, 150, 255);
+        box-shadow: 0 0 2px rgb(8, 123, 232);
+        border: none;
+        margin-top: 13px;
+        border-radius: 15px;
+        color: white;
+        width: 300px;
+        height: 30px;
+      }
+      .field_container input[type="submit"]:hover {
+        background-color: #1aa8eb;
+      }
+      .flex_container {
+        display: flex;
+      }
+      .container {
+        flex: 1;
+      }
+      .container:first-child h1 {
+        font-size: 45px;
+      }
+      .container:first-child p {
+        font-size: 18px;
+        padding-right: 20px;
+      }
+      .container:first-child {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-right: 40px;        
+        margin-top: 130px;
+        margin-left: 16%;
+      }
+      .container:first-child a {
+        text-decoration: none;
+        color: rgba(234, 233, 233, 0.847);
+      }
+      .container:first-child a:hover {
+        color: rgba(234, 233, 233, 0.847);
+        text-decoration:underline;
+      }
+      .container:first-child input[type="submit"] {
+        width: 120px;
+        background-color: #1fad22;
+        border: none;
+        margin-top: 10px;
+        border-radius: 15px;
+        color: white;
+        margin-left: 0px;
+        padding: 10px 20px;
+      }
+      .container:first-child input[type="submit"]:hover {
+        background-color: #0bf20f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="navbar">
+        <div class="navbar-left">
+          <a class="navbar-link" href="#">Landing</a>
+        </div>
+        <div class="navbar-right">
+          <a class="navbar-link" href="#">Home</a>
+          <a class="navbar-link" href="#">Features</a>
+          <a class="navbar-link" href="#">Reviews</a>
+          <a class="navbar-link" href="#">Pricing</a>
+          <a class="navbar-link" href="#">FAQ</a>
+          <button class="navbar-button">Get Started</button>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="flex_container">
+        <div class="container">
+          <h1>Fly makes you <br />faster</h1>
+          <p>
+            New free template by <a href="#">unicookies</a> . For more templates
+            visit the <a href="#">site</a>. Lorem ipsum dolor sit amet
+            adipisicing elit.
+          </p>
+
+          <input type="submit" value="SEE PRICING" />
+        </div>
+
+        <div class="container">
+          <div class="field_container">
+            <div class="fields">
+              <br />
+              <h2>Sign Up for Free</h2>
+              <input type="text" placeholder="Full Name " />
+              <input type="email" placeholder="Email " />
+              <input type="password" placeholder="Password" />
+              <select>
+                <option>Type</option>
+                <option>business</option>
+              </select>
+              <br />
+            </div>
+            <input type="submit" value="Register" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
